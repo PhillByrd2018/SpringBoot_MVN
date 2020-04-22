@@ -1,0 +1,157 @@
+/* Core Styles */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(201, 196, 196);
+    color: black;
+    font-size: 1.2em;
+    line-height: 1.7;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    text-decoration: none;
+    padding: .5em 1em;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    background: #eaeaea;
+    color: #333;
+}
+
+/* Header Showcase */
+
+#showcase {
+    min-height: 650px;
+    text-align: center;
+    color: white;
+}
+
+/* s */
+
+#showcase .bg-img {
+    position: absolute;
+    background: #333 url('https://cdnb.artstation.com/p/assets/images/images/018/710/363/medium/alex-flores-mordekaiser2019-alexflores.jpg?1560412968');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    z-index: -3;
+    opacity: .9;
+}
+
+#showcase h1 {
+    padding-top: 150px;
+    padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+  padding: 0 1.5em;
+}
+
+/* section A */
+
+#section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+  }
+
+#section-a .content-wrap {
+    padding: 2em;
+}
+
+/* section B */
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+/* section C */
+
+#section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+/* section D */
+
+#section-d {
+    padding: 2em;
+}
+
+/* footer */
+
+#main-footer {
+  padding: 2em;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+#main-footer h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+    #section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+    }
+    #section-a .content-text p {
+        padding-top: 0;
+    }
+    .content-wrap, #section-b ul {
+        grid-column: 2/4;
+    }
+    #section-b ul {
+        display: flex;
+    }
+    #section-b li {
+        width: 31%;
+    }
+}
